@@ -1,0 +1,1188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cup'O'Chino — From Bean to Cup, Every Drop Tells a Story</title>
+  <meta name="description" content="Cup'O'Chino is a specialty coffee brand from Bengaluru. Single-origin beans, hand-roasted, brewed with craft." />
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Lato:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- ==================== NAVIGATION ==================== -->
+  <nav id="navbar" class="nav">
+    <div class="nav__inner">
+      <a href="#hero" class="nav__logo">Cup'O'Chino</a>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#about">Story</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#location">Find Us</a></li>
+        <li><a href="#info">Contact</a></li>
+      </ul>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to brown theme" aria-pressed="false">
+        <span class="theme-toggle__track">
+          <span class="theme-toggle__option theme-toggle__option--olive">Olive</span>
+          <span class="theme-toggle__knob"></span>
+          <span class="theme-toggle__option theme-toggle__option--brown">Brown</span>
+        </span>
+      </button>
+      <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="navOverlay">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile fullscreen overlay -->
+  <div class="nav__overlay" id="navOverlay">
+    <ul>
+      <li><a href="#about">Story</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#process">Process</a></li>
+      <li><a href="#location">Find Us</a></li>
+      <li><a href="#info">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- ==================== SECTION 1 — HERO ==================== -->
+  <section id="hero" class="hero">
+    <div class="section-leaves section-leaves--hero-left" aria-hidden="true"></div>
+    <div class="section-leaves section-leaves--hero-right" aria-hidden="true"></div>
+    <div class="hero__grain"></div>
+
+    <!-- Decorative ambient beans floating -->
+    <div class="hero__ambient" aria-hidden="true">
+      <svg viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice">
+        <defs>
+          <radialGradient id="heroGlow" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#3B1F0A" stop-opacity="0.55"/>
+            <stop offset="100%" stop-color="#1A0A00" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+        <circle cx="720" cy="450" r="600" fill="url(#heroGlow)"/>
+      </svg>
+
+    </div>
+
+    <svg class="hero__landscape" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+      <defs>
+        <linearGradient id="heroSky" x2="0" y2="1">
+          <stop stop-color="#fbf4e8"/>
+          <stop offset="0.48" stop-color="#dbe0cf"/>
+          <stop offset="1" stop-color="#9aaf89"/>
+        </linearGradient>
+        <linearGradient id="heroMountain" x2="0" y2="1">
+          <stop stop-color="#8ea484"/>
+          <stop offset="1" stop-color="#315f40"/>
+        </linearGradient>
+        <linearGradient id="heroSlope" x2="0" y2="1">
+          <stop stop-color="#52734d"/>
+          <stop offset="1" stop-color="#163d2a"/>
+        </linearGradient>
+        <linearGradient id="heroTable" x2="0" y2="1">
+          <stop stop-color="#a67a52"/>
+          <stop offset="1" stop-color="#4f3322"/>
+        </linearGradient>
+      </defs>
+      <rect width="1440" height="900" fill="url(#heroSky)"/>
+      <path d="M0 410L220 270L390 372L590 205L795 365L970 232L1160 338L1440 180V610H0Z" fill="#c1cbb8"/>
+      <path d="M0 500L230 350L420 435L650 280L820 420L1010 275L1220 395L1440 290V650H0Z" fill="url(#heroMountain)"/>
+      <path d="M0 545Q260 420 500 540T990 470T1440 490V705H0Z" fill="url(#heroSlope)"/>
+      <g opacity=".24" stroke="#f4eddc" fill="none" stroke-width="5">
+        <path d="M70 542Q330 477 540 561"/>
+        <path d="M205 575Q410 519 604 574"/>
+        <path d="M905 505Q1108 450 1315 508"/>
+        <path d="M852 540Q1110 484 1410 540"/>
+      </g>
+      <path d="M0 701Q340 672 640 694T1440 679V900H0Z" fill="url(#heroTable)"/>
+      <g fill="#244b34">
+        <path d="M0 692Q55 595 100 506Q115 610 80 710Z"/>
+        <ellipse cx="57" cy="565" rx="28" ry="72" transform="rotate(-32 57 565)"/>
+        <ellipse cx="111" cy="607" rx="25" ry="66" transform="rotate(34 111 607)"/>
+      </g>
+      <g transform="translate(1010 630)">
+        <ellipse cx="95" cy="174" rx="174" ry="20" fill="#362315" opacity=".55"/>
+        <ellipse cx="65" cy="155" rx="112" ry="14" fill="#eee0c6"/>
+        <path d="M0 42h143l-13 99q-3 20-25 20H37q-22 0-25-20Z" fill="#f6eee0" stroke="#d6c19e" stroke-width="5"/>
+        <ellipse cx="72" cy="42" rx="72" ry="17" fill="#f9f1e5" stroke="#d6c19e" stroke-width="5"/>
+        <ellipse cx="72" cy="43" rx="61" ry="12" fill="#4a2614"/>
+        <ellipse cx="72" cy="40" rx="50" ry="7" fill="#a36c39" opacity=".6"/>
+        <path d="M137 72q70-6 67 39q-3 39-61 37" fill="none" stroke="#f6eee0" stroke-width="18"/>
+        <g fill="#55311d">
+          <ellipse cx="-36" cy="161" rx="14" ry="8" transform="rotate(20 -36 161)"/>
+          <ellipse cx="-4" cy="174" rx="14" ry="8" transform="rotate(-20 -4 174)"/>
+          <ellipse cx="180" cy="162" rx="14" ry="8" transform="rotate(35 180 162)"/>
+          <ellipse cx="211" cy="175" rx="14" ry="8" transform="rotate(-18 211 175)"/>
+        </g>
+      </g>
+    </svg>
+
+    <div class="hero__content">
+      <p class="hero__eyebrow">Single Origin · Bengaluru · Est. 2019</p>
+      <h1 class="hero__title" id="heroTitle">Cup'O'Chino</h1>
+      <p class="hero__tagline" id="heroTagline">From Bean to Cup, Every Drop Tells a Story</p>
+      <a href="#journey" class="hero__cta" id="heroCta">
+        <span>Explore Our Story</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+          <path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
+
+    <a href="#journey" class="hero__scroll" aria-label="Scroll down">
+      <svg width="24" height="40" viewBox="0 0 24 40" fill="none">
+        <rect x="1" y="1" width="22" height="38" rx="11" stroke="currentColor" stroke-width="1.5"/>
+        <circle cx="12" cy="12" r="3" fill="currentColor" id="scrollDot"/>
+      </svg>
+      <span>scroll</span>
+    </a>
+  </section>
+
+  <!-- ==================== SECTION 2 — JOURNEY ANIMATION ==================== -->
+  <section id="journey" class="journey">
+    <!-- The pinned canvas -->
+    <div id="journey-canvas" class="journey__canvas">
+
+      <div class="journey__header">
+        <p class="journey__eyebrow">The Journey</p>
+        <h2 class="journey__title">From Bean to Cup</h2>
+      </div>
+
+      <!-- Stage indicator dots -->
+      <div class="journey__progress" id="journeyProgress">
+        <div class="journey__dot" data-stage="1"><span>01</span></div>
+        <div class="journey__dot" data-stage="2"><span>02</span></div>
+        <div class="journey__dot" data-stage="3"><span>03</span></div>
+        <div class="journey__dot" data-stage="4"><span>04</span></div>
+        <div class="journey__dot" data-stage="5"><span>05</span></div>
+      </div>
+
+      <!-- Stage labels -->
+      <div class="journey__labels">
+        <div class="journey__label" data-stage="1"><span>Stage 01 ·</span> The Harvest</div>
+        <div class="journey__label" data-stage="2"><span>Stage 02 ·</span> The Roast</div>
+        <div class="journey__label" data-stage="3"><span>Stage 03 ·</span> The Grind</div>
+        <div class="journey__label" data-stage="4"><span>Stage 04 ·</span> The Tamp</div>
+        <div class="journey__label" data-stage="5"><span>Stage 05 ·</span> The Pour</div>
+      </div>
+
+      <!-- The animation stage -->
+      <svg class="journey__svg" id="journeySvg" viewBox="0 0 1000 700" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="streamGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#3B1F0A"/>
+            <stop offset="100%" stop-color="#1A0A00"/>
+          </linearGradient>
+          <linearGradient id="cupFillGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#5A2A0A"/>
+            <stop offset="100%" stop-color="#1A0A00"/>
+          </linearGradient>
+          <radialGradient id="drumGrad" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#5A3418"/>
+            <stop offset="100%" stop-color="#2A1408"/>
+          </radialGradient>
+          <radialGradient id="lightOn" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#FFD37A"/>
+            <stop offset="100%" stop-color="#C8860A"/>
+          </radialGradient>
+          <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur stdDeviation="3" result="blur"/>
+            <feMerge>
+              <feMergeNode in="blur"/>
+              <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+          </filter>
+        </defs>
+
+        <!-- ===== STAGE 1: BEAN POUR ===== -->
+        <g id="stage1" class="stage" data-stage="1">
+          <!-- Roaster drum (target) -->
+          <g id="drum-stage1" transform="translate(500 480)">
+            <ellipse cx="0" cy="20" rx="160" ry="30" fill="#1A0A00" opacity="0.4"/>
+            <circle cx="0" cy="0" r="130" fill="url(#drumGrad)" stroke="#C8860A" stroke-width="2"/>
+            <circle cx="0" cy="0" r="130" fill="none" stroke="#C8860A" stroke-width="1" stroke-dasharray="3 8" opacity="0.5"/>
+            <!-- Tick marks -->
+            <g stroke="#C8860A" stroke-width="2" opacity="0.6">
+              <line x1="0" y1="-130" x2="0" y2="-120"/>
+              <line x1="92" y1="-92" x2="85" y2="-85"/>
+              <line x1="130" y1="0" x2="120" y2="0"/>
+              <line x1="92" y1="92" x2="85" y2="85"/>
+              <line x1="0" y1="130" x2="0" y2="120"/>
+              <line x1="-92" y1="92" x2="-85" y2="85"/>
+              <line x1="-130" y1="0" x2="-120" y2="0"/>
+              <line x1="-92" y1="-92" x2="-85" y2="-85"/>
+            </g>
+            <text x="0" y="6" text-anchor="middle" fill="#C8860A" font-family="Playfair Display" font-size="20" font-style="italic" opacity="0.8">roaster</text>
+          </g>
+
+          <!-- Falling beans (green/raw) -->
+          <g id="stage1-beans">
+            <g class="raw-bean" transform="translate(420 100)">
+              <ellipse cx="0" cy="0" rx="14" ry="9" fill="#4A7C3F"/>
+              <path d="M -10 0 Q 0 -3 10 0 Q 0 3 -10 0" fill="#2E5128" opacity="0.7"/>
+            </g>
+            <g class="raw-bean" transform="translate(480 80)">
+              <ellipse cx="0" cy="0" rx="14" ry="9" fill="#5A8A4A"/>
+              <path d="M -10 0 Q 0 -3 10 0 Q 0 3 -10 0" fill="#2E5128" opacity="0.7"/>
+            </g>
+            <g class="raw-bean" transform="translate(540 110)">
+              <ellipse cx="0" cy="0" rx="14" ry="9" fill="#4A7C3F"/>
+              <path d="M -10 0 Q 0 -3 10 0 Q 0 3 -10 0" fill="#2E5128" opacity="0.7"/>
+            </g>
+            <g class="raw-bean" transform="translate(380 90)">
+              <ellipse cx="0" cy="0" rx="14" ry="9" fill="#5A8A4A"/>
+              <path d="M -10 0 Q 0 -3 10 0 Q 0 3 -10 0" fill="#2E5128" opacity="0.7"/>
+            </g>
+            <g class="raw-bean" transform="translate(600 95)">
+              <ellipse cx="0" cy="0" rx="14" ry="9" fill="#4A7C3F"/>
+              <path d="M -10 0 Q 0 -3 10 0 Q 0 3 -10 0" fill="#2E5128" opacity="0.7"/>
+            </g>
+            <g class="raw-bean" transform="translate(450 70)">
+              <ellipse cx="0" cy="0" rx="14" ry="9" fill="#5A8A4A"/>
+              <path d="M -10 0 Q 0 -3 10 0 Q 0 3 -10 0" fill="#2E5128" opacity="0.7"/>
+            </g>
+            <g class="raw-bean" transform="translate(560 75)">
+              <ellipse cx="0" cy="0" rx="14" ry="9" fill="#4A7C3F"/>
+              <path d="M -10 0 Q 0 -3 10 0 Q 0 3 -10 0" fill="#2E5128" opacity="0.7"/>
+            </g>
+            <g class="raw-bean" transform="translate(510 60)">
+              <ellipse cx="0" cy="0" rx="14" ry="9" fill="#5A8A4A"/>
+              <path d="M -10 0 Q 0 -3 10 0 Q 0 3 -10 0" fill="#2E5128" opacity="0.7"/>
+            </g>
+            <g class="raw-bean" transform="translate(400 50)">
+              <ellipse cx="0" cy="0" rx="14" ry="9" fill="#4A7C3F"/>
+              <path d="M -10 0 Q 0 -3 10 0 Q 0 3 -10 0" fill="#2E5128" opacity="0.7"/>
+            </g>
+            <g class="raw-bean" transform="translate(580 40)">
+              <ellipse cx="0" cy="0" rx="14" ry="9" fill="#5A8A4A"/>
+              <path d="M -10 0 Q 0 -3 10 0 Q 0 3 -10 0" fill="#2E5128" opacity="0.7"/>
+            </g>
+          </g>
+        </g>
+
+        <!-- ===== STAGE 2: ROASTING ===== -->
+        <g id="stage2" class="stage" data-stage="2" opacity="0">
+          <!-- Heat shimmer -->
+          <g id="stage2-heat" opacity="0.4">
+            <path d="M 400 350 Q 410 330 400 310 Q 390 290 400 270" stroke="#C8860A" stroke-width="1" fill="none" opacity="0.3"/>
+            <path d="M 500 340 Q 510 320 500 300 Q 490 280 500 260" stroke="#C8860A" stroke-width="1" fill="none" opacity="0.3"/>
+            <path d="M 600 350 Q 610 330 600 310 Q 590 290 600 270" stroke="#C8860A" stroke-width="1" fill="none" opacity="0.3"/>
+          </g>
+
+          <!-- Rotating drum -->
+          <g id="drum-rotating" transform="translate(500 400)">
+            <ellipse cx="0" cy="40" rx="180" ry="35" fill="#1A0A00" opacity="0.5"/>
+            <g id="drum-spin">
+              <circle cx="0" cy="0" r="150" fill="url(#drumGrad)" stroke="#C8860A" stroke-width="3"/>
+              <circle cx="0" cy="0" r="150" fill="none" stroke="#C8860A" stroke-width="1" opacity="0.4"/>
+              <!-- Internal vanes -->
+              <line x1="-150" y1="0" x2="150" y2="0" stroke="#C8860A" stroke-width="1.5" opacity="0.5"/>
+              <line x1="0" y1="-150" x2="0" y2="150" stroke="#C8860A" stroke-width="1.5" opacity="0.5"/>
+              <line x1="-106" y1="-106" x2="106" y2="106" stroke="#C8860A" stroke-width="1" opacity="0.4"/>
+              <line x1="-106" y1="106" x2="106" y2="-106" stroke="#C8860A" stroke-width="1" opacity="0.4"/>
+              <!-- Bolts -->
+              <circle cx="0" cy="-150" r="6" fill="#C8860A"/>
+              <circle cx="150" cy="0" r="6" fill="#C8860A"/>
+              <circle cx="0" cy="150" r="6" fill="#C8860A"/>
+              <circle cx="-150" cy="0" r="6" fill="#C8860A"/>
+              <!-- Center hub -->
+              <circle cx="0" cy="0" r="20" fill="#1A0A00" stroke="#C8860A" stroke-width="2"/>
+              <circle cx="0" cy="0" r="6" fill="#C8860A"/>
+
+              <!-- Roasting beans inside -->
+              <g id="stage2-beans">
+                <ellipse class="roast-bean" cx="-50" cy="-30" rx="11" ry="7" fill="#4A7C3F"/>
+                <ellipse class="roast-bean" cx="30" cy="-50" rx="11" ry="7" fill="#4A7C3F"/>
+                <ellipse class="roast-bean" cx="-20" cy="40" rx="11" ry="7" fill="#4A7C3F"/>
+                <ellipse class="roast-bean" cx="60" cy="10" rx="11" ry="7" fill="#4A7C3F"/>
+                <ellipse class="roast-bean" cx="-70" cy="20" rx="11" ry="7" fill="#4A7C3F"/>
+                <ellipse class="roast-bean" cx="10" cy="60" rx="11" ry="7" fill="#4A7C3F"/>
+                <ellipse class="roast-bean" cx="-30" cy="-60" rx="11" ry="7" fill="#4A7C3F"/>
+                <ellipse class="roast-bean" cx="50" cy="50" rx="11" ry="7" fill="#4A7C3F"/>
+              </g>
+            </g>
+          </g>
+
+          <!-- Stand -->
+          <g transform="translate(500 580)">
+            <rect x="-12" y="0" width="24" height="60" fill="#3B1F0A"/>
+            <rect x="-80" y="55" width="160" height="14" rx="3" fill="#3B1F0A"/>
+          </g>
+
+          <!-- Steam -->
+          <g id="stage2-steam">
+            <path class="steam" d="M 470 250 Q 480 220 470 190 Q 460 160 470 130" stroke="rgba(255,255,255,0.5)" stroke-width="3" fill="none" stroke-linecap="round"/>
+            <path class="steam" d="M 500 250 Q 510 220 500 190 Q 490 160 500 130" stroke="rgba(255,255,255,0.5)" stroke-width="3" fill="none" stroke-linecap="round"/>
+            <path class="steam" d="M 530 250 Q 540 220 530 190 Q 520 160 530 130" stroke="rgba(255,255,255,0.5)" stroke-width="3" fill="none" stroke-linecap="round"/>
+            <path class="steam" d="M 455 270 Q 465 240 455 210" stroke="rgba(255,255,255,0.4)" stroke-width="2" fill="none" stroke-linecap="round"/>
+            <path class="steam" d="M 545 270 Q 555 240 545 210" stroke="rgba(255,255,255,0.4)" stroke-width="2" fill="none" stroke-linecap="round"/>
+          </g>
+
+          <!-- Temperature gauge -->
+          <g transform="translate(780 400)" opacity="0.85">
+            <circle cx="0" cy="0" r="50" fill="#1A0A00" stroke="#C8860A" stroke-width="2"/>
+            <circle cx="0" cy="0" r="42" fill="none" stroke="#C8860A" stroke-width="1" opacity="0.4"/>
+            <text x="0" y="-12" text-anchor="middle" fill="#C8860A" font-family="Lato" font-size="9" letter-spacing="1">TEMP</text>
+            <text x="0" y="10" text-anchor="middle" fill="#F5ECD7" font-family="Playfair Display" font-size="20" font-weight="700">218°</text>
+            <text x="0" y="26" text-anchor="middle" fill="#7A6A5A" font-family="Lato" font-size="8">CELSIUS</text>
+            <!-- needle -->
+            <line id="tempNeedle" x1="0" y1="0" x2="0" y2="-35" stroke="#C8860A" stroke-width="2" stroke-linecap="round"/>
+          </g>
+        </g>
+
+        <!-- ===== STAGE 3: GRINDING ===== -->
+        <g id="stage3" class="stage" data-stage="3" opacity="0">
+          <!-- Grinder body -->
+          <g transform="translate(500 350)">
+            <!-- Hopper top -->
+            <path d="M -80 -120 L 80 -120 L 60 -50 L -60 -50 Z" fill="#3B1F0A" stroke="#C8860A" stroke-width="2"/>
+            <ellipse cx="0" cy="-120" rx="80" ry="12" fill="#5A3418" stroke="#C8860A" stroke-width="2"/>
+            <ellipse cx="0" cy="-120" rx="65" ry="8" fill="#1A0A00"/>
+            <!-- Beans in hopper -->
+            <g id="stage3-hopper-beans">
+              <ellipse cx="-30" cy="-115" rx="8" ry="5" fill="#3B1F0A"/>
+              <ellipse cx="0" cy="-118" rx="8" ry="5" fill="#3B1F0A"/>
+              <ellipse cx="25" cy="-114" rx="8" ry="5" fill="#3B1F0A"/>
+              <ellipse cx="-15" cy="-110" rx="8" ry="5" fill="#3B1F0A"/>
+              <ellipse cx="15" cy="-108" rx="8" ry="5" fill="#3B1F0A"/>
+            </g>
+
+            <!-- Body -->
+            <rect x="-90" y="-50" width="180" height="120" rx="6" fill="url(#drumGrad)" stroke="#C8860A" stroke-width="2"/>
+            <text x="0" y="-15" text-anchor="middle" fill="#C8860A" font-family="Playfair Display" font-size="14" font-style="italic" opacity="0.7">CupOChino</text>
+
+            <!-- Window showing burrs -->
+            <circle cx="0" cy="20" r="38" fill="#1A0A00" stroke="#C8860A" stroke-width="2"/>
+
+            <!-- Spinning burrs -->
+            <g id="grinder-burrs" transform="translate(0 20)">
+              <g id="burrs-spin">
+                <path d="M 0 -30 L 8 -8 L 30 0 L 8 8 L 0 30 L -8 8 L -30 0 L -8 -8 Z" fill="#C8860A" opacity="0.85"/>
+                <circle cx="0" cy="0" r="6" fill="#1A0A00"/>
+              </g>
+            </g>
+
+            <!-- Dial -->
+            <circle cx="60" cy="-20" r="14" fill="#1A0A00" stroke="#C8860A" stroke-width="1.5"/>
+            <line x1="60" y1="-20" x2="60" y2="-30" stroke="#C8860A" stroke-width="2"/>
+
+            <!-- Chute -->
+            <path d="M -20 70 L 20 70 L 14 110 L -14 110 Z" fill="#1A0A00" stroke="#C8860A" stroke-width="1.5"/>
+          </g>
+
+          <!-- Falling grounds -->
+          <g id="stage3-grounds">
+            <circle class="ground" cx="495" cy="475" r="2" fill="#2A1408"/>
+            <circle class="ground" cx="500" cy="490" r="2.5" fill="#3B1F0A"/>
+            <circle class="ground" cx="505" cy="500" r="2" fill="#2A1408"/>
+            <circle class="ground" cx="498" cy="510" r="2.5" fill="#3B1F0A"/>
+            <circle class="ground" cx="503" cy="525" r="2" fill="#2A1408"/>
+            <circle class="ground" cx="497" cy="535" r="2.5" fill="#3B1F0A"/>
+            <circle class="ground" cx="502" cy="550" r="2" fill="#2A1408"/>
+          </g>
+
+          <!-- Catch tray -->
+          <g transform="translate(500 580)">
+            <ellipse cx="0" cy="0" rx="70" ry="14" fill="#3B1F0A" stroke="#C8860A" stroke-width="1.5"/>
+            <ellipse cx="0" cy="-2" rx="60" ry="10" fill="#1A0A00"/>
+            <ellipse cx="0" cy="-3" rx="50" ry="7" fill="#2A1408"/>
+          </g>
+        </g>
+
+        <!-- ===== STAGE 4: TAMPING ===== -->
+        <g id="stage4" class="stage" data-stage="4" opacity="0">
+          <!-- Tamper -->
+          <g id="tamper" transform="translate(500 200)">
+            <!-- Handle -->
+            <rect x="-22" y="-90" width="44" height="80" rx="6" fill="#3B1F0A" stroke="#C8860A" stroke-width="2"/>
+            <rect x="-22" y="-90" width="44" height="20" rx="6" fill="#5A3418"/>
+            <line x1="-18" y1="-50" x2="18" y2="-50" stroke="#C8860A" stroke-width="1" opacity="0.4"/>
+            <line x1="-18" y1="-30" x2="18" y2="-30" stroke="#C8860A" stroke-width="1" opacity="0.4"/>
+            <!-- Disc -->
+            <rect x="-50" y="-10" width="100" height="14" rx="3" fill="#C8860A"/>
+            <ellipse cx="0" cy="4" rx="50" ry="6" fill="#A06D08"/>
+          </g>
+
+          <!-- Portafilter -->
+          <g transform="translate(500 430)">
+            <!-- Handle extending right -->
+            <rect x="50" y="-12" width="140" height="24" rx="4" fill="#3B1F0A" stroke="#C8860A" stroke-width="2"/>
+            <rect x="170" y="-16" width="24" height="32" rx="4" fill="#1A0A00" stroke="#C8860A" stroke-width="1.5"/>
+            <!-- Basket -->
+            <ellipse cx="0" cy="-20" rx="60" ry="14" fill="#5A3418" stroke="#C8860A" stroke-width="2"/>
+            <path d="M -60 -20 Q -60 30 -45 45 L 45 45 Q 60 30 60 -20 Z" fill="#3B1F0A" stroke="#C8860A" stroke-width="2"/>
+            <!-- Inside coffee puck -->
+            <ellipse cx="0" cy="-20" rx="50" ry="10" fill="#1A0A00"/>
+            <ellipse id="coffeePuck" cx="0" cy="-18" rx="48" ry="8" fill="#3B1F0A"/>
+          </g>
+
+          <!-- Pressure indicator arc -->
+          <g transform="translate(780 430)">
+            <text x="0" y="-80" text-anchor="middle" fill="#C8860A" font-family="Lato" font-size="10" letter-spacing="2">PRESSURE</text>
+            <!-- Background arc -->
+            <path d="M -55 0 A 55 55 0 0 1 55 0" stroke="#3B1F0A" stroke-width="6" fill="none" stroke-linecap="round"/>
+            <!-- Active arc - drawn with DrawSVG -->
+            <path id="pressureArc" d="M -55 0 A 55 55 0 0 1 55 0" stroke="#C8860A" stroke-width="6" fill="none" stroke-linecap="round"/>
+            <text x="-55" y="20" text-anchor="middle" fill="#7A6A5A" font-family="Lato" font-size="9">0</text>
+            <text x="55" y="20" text-anchor="middle" fill="#7A6A5A" font-family="Lato" font-size="9">9bar</text>
+            <text x="0" y="-30" text-anchor="middle" fill="#F5ECD7" font-family="Playfair Display" font-size="22" font-weight="700" id="pressureValue">30lb</text>
+          </g>
+        </g>
+
+        <!-- ===== STAGE 5: EXTRACTION ===== -->
+        <g id="stage5" class="stage" data-stage="5" opacity="0">
+          <!-- Espresso machine -->
+          <g transform="translate(500 270)">
+            <!-- Body -->
+            <rect x="-180" y="-130" width="360" height="200" rx="10" fill="#3B1F0A" stroke="#C8860A" stroke-width="3"/>
+            <rect x="-180" y="-130" width="360" height="40" rx="10" fill="#5A3418"/>
+            <!-- Brand bar -->
+            <rect x="-180" y="-95" width="360" height="3" fill="#C8860A"/>
+            <text x="0" y="-105" text-anchor="middle" fill="#F5ECD7" font-family="Playfair Display" font-size="14" font-style="italic">CupOChino · La Marzocca</text>
+
+            <!-- Pressure gauge -->
+            <g transform="translate(-110 -30)">
+              <circle cx="0" cy="0" r="35" fill="#1A0A00" stroke="#C8860A" stroke-width="2"/>
+              <circle cx="0" cy="0" r="28" fill="none" stroke="#7A6A5A" stroke-width="0.5" stroke-dasharray="2 4"/>
+              <text x="0" y="4" text-anchor="middle" fill="#C8860A" font-family="Playfair Display" font-size="11" font-style="italic">9 BAR</text>
+              <line x1="0" y1="0" x2="18" y2="-18" stroke="#C8860A" stroke-width="2" stroke-linecap="round"/>
+            </g>
+
+            <!-- Indicator light -->
+            <circle id="machineLight" cx="0" cy="-30" r="10" fill="#3A3A3A" stroke="#C8860A" stroke-width="1.5"/>
+
+            <!-- Buttons -->
+            <g transform="translate(80 -30)">
+              <rect x="-8" y="-15" width="16" height="30" rx="3" fill="#1A0A00" stroke="#C8860A" stroke-width="1"/>
+              <circle cx="0" cy="-7" r="3" fill="#C8860A"/>
+              <circle cx="0" cy="7" r="3" fill="#7A6A5A"/>
+            </g>
+
+            <!-- Group head -->
+            <rect x="-40" y="60" width="80" height="20" fill="#C8860A"/>
+            <rect x="-35" y="78" width="70" height="14" rx="2" fill="#3B1F0A" stroke="#C8860A" stroke-width="1.5"/>
+
+            <!-- Portafilter -->
+            <g transform="translate(0 95)">
+              <ellipse cx="0" cy="0" rx="38" ry="6" fill="#1A0A00"/>
+              <rect x="-30" y="0" width="60" height="20" rx="2" fill="#3B1F0A" stroke="#C8860A" stroke-width="1.5"/>
+              <!-- Spout -->
+              <path d="M -10 20 L -8 30 L 8 30 L 10 20 Z" fill="#1A0A00" stroke="#C8860A" stroke-width="1"/>
+            </g>
+          </g>
+
+          <!-- Espresso stream -->
+          <path id="espressoStream" d="M 500 425 Q 498 470 500 520" stroke="url(#streamGrad)" stroke-width="6" fill="none" stroke-linecap="round" opacity="0"/>
+          <circle id="espressoDrop" cx="500" cy="425" r="5" fill="#3B1F0A" opacity="0"/>
+
+          <!-- Cup -->
+          <g transform="translate(500 580)">
+            <!-- Saucer -->
+            <ellipse cx="0" cy="50" rx="90" ry="10" fill="#1A0A00" opacity="0.5"/>
+            <ellipse cx="0" cy="45" rx="85" ry="8" fill="#F5ECD7" stroke="#C8860A" stroke-width="1.5"/>
+            <ellipse cx="0" cy="42" rx="65" ry="5" fill="#FAF3E8"/>
+
+            <!-- Cup body -->
+            <path d="M -45 -10 L -42 38 Q -42 45 -35 45 L 35 45 Q 42 45 42 38 L 45 -10 Z" fill="#F5ECD7" stroke="#C8860A" stroke-width="2"/>
+            <ellipse cx="0" cy="-10" rx="45" ry="6" fill="#FAF3E8" stroke="#C8860A" stroke-width="2"/>
+
+            <!-- Handle -->
+            <path d="M 42 0 Q 65 0 65 18 Q 65 36 42 36" fill="none" stroke="#C8860A" stroke-width="3"/>
+            <path d="M 42 5 Q 60 5 60 18 Q 60 31 42 31" fill="none" stroke="#F5ECD7" stroke-width="2"/>
+
+            <!-- Coffee inside (clipped) -->
+            <defs>
+              <clipPath id="cupClip">
+                <path d="M -42 -10 L -40 38 Q -40 43 -33 43 L 33 43 Q 40 43 40 38 L 42 -10 Z"/>
+              </clipPath>
+            </defs>
+            <g clip-path="url(#cupClip)">
+              <rect id="cupFill" x="-45" y="40" width="90" height="50" fill="url(#cupFillGrad)"/>
+            </g>
+            <!-- Crema top line -->
+            <ellipse id="cremaTop" cx="0" cy="40" rx="42" ry="4" fill="#A06D08" opacity="0"/>
+          </g>
+
+          <!-- Steam from cup -->
+          <g id="cupSteam">
+            <path id="steam1" d="M 480 540 Q 470 510 480 480 Q 490 450 480 420" stroke="rgba(245,236,215,0.5)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+            <path id="steam2" d="M 500 540 Q 510 510 500 480 Q 490 450 500 420" stroke="rgba(245,236,215,0.5)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+            <path id="steam3" d="M 520 540 Q 530 510 520 480 Q 510 450 520 420" stroke="rgba(245,236,215,0.5)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          </g>
+
+          <!-- Completion text -->
+          <g id="stage5-complete" opacity="0">
+            <text x="500" y="680" text-anchor="middle" fill="#C8860A" font-family="Lato" font-size="11" letter-spacing="4">─ READY ─</text>
+            <text x="500" y="710" text-anchor="middle" fill="#F5ECD7" font-family="Playfair Display" font-size="26" font-style="italic">Your Cup'O'Chino is Ready.</text>
+          </g>
+        </g>
+      </svg>
+
+      <div class="journey-photo" id="journeyPhoto" aria-label="Scroll-driven coffee making process">
+        <div class="journey-photo__stage is-active" data-stage="1">
+          <img src="assets/images/beans.png" alt="Roasted coffee beans suspended in warm light" />
+          <div class="journey-photo__copy">
+            <span>01 / Select</span>
+            <h3>Beans with weight, oil and origin.</h3>
+            <p>The story starts with real beans, not cartoon shapes. The frame stays cinematic while the copy moves with the scroll.</p>
+          </div>
+        </div>
+        <div class="journey-photo__stage" data-stage="2">
+          <img src="assets/images/grinder.png" alt="Vintage coffee grinder with roasted beans" />
+          <div class="journey-photo__copy">
+            <span>02 / Grind</span>
+            <h3>The grind tightens the flavour.</h3>
+            <p>Fresh grounds move from whole bean to texture, with the image sliding into focus as the section pins.</p>
+          </div>
+        </div>
+        <div class="journey-photo__stage" data-stage="3">
+          <img src="assets/images/presser.png" alt="Coffee tamper pressed into a portafilter" />
+          <div class="journey-photo__copy">
+            <span>03 / Tamp</span>
+            <h3>Pressure makes the puck honest.</h3>
+            <p>A slower, more premium moment: the tamper drops, the stage darkens, and the process feels deliberate.</p>
+          </div>
+        </div>
+        <div class="journey-photo__stage" data-stage="4">
+          <img src="assets/images/final-machine.png" alt="Espresso machine pouring coffee into a cup" />
+          <div class="journey-photo__copy">
+            <span>04 / Extract</span>
+            <h3>Steam, crema and the final pour.</h3>
+            <p>The machine takes over for the final movement, ending on a richer, client-ready coffee making sequence.</p>
+          </div>
+        </div>
+        <div class="journey-photo__stage" data-stage="5">
+          <img src="assets/images/coffee-espresso.png" alt="Finished espresso in a dark green cup" />
+          <div class="journey-photo__copy">
+            <span>05 / Serve</span>
+            <h3>The cup lands with a quiet finish.</h3>
+            <p>The sequence resolves into the finished drink, so the scroll has a clear destination instead of stopping mid-process.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile fallback timeline -->
+    <div class="journey__mobile">
+      <h2>From Bean to Cup</h2>
+      <ol>
+        <li class="mob-step"><span>01</span><h3>The Harvest</h3><p>Single-origin beans, picked at peak ripeness from estates across Coorg and Chikmagalur.</p></li>
+        <li class="mob-step"><span>02</span><h3>The Roast</h3><p>A precise temperature curve, three years in the dialling. Each origin gets its own profile.</p></li>
+        <li class="mob-step"><span>03</span><h3>The Grind</h3><p>Calibrated burr grinders, ground fresh within thirty minutes of the brew.</p></li>
+        <li class="mob-step"><span>04</span><h3>The Tamp</h3><p>30 pounds of pressure, even bed, the puck made ready for nine bars of water.</p></li>
+        <li class="mob-step"><span>05</span><h3>The Pour</h3><p>A 25-second extraction. Crema thick as honey. Your Cup'O'Chino is ready.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ==================== SECTION 3 — ABOUT ==================== -->
+  <section id="about" class="about">
+    <div class="section-leaves section-leaves--about" aria-hidden="true"></div>
+    <div class="container about__grid">
+      <div class="about__text">
+        <p class="eyebrow eyebrow--dark">— Our Story</p>
+        <h2 class="section__title section__title--dark">A small roastery <em>in the hills.</em></h2>
+        <p class="about__p">Cup'O'Chino was born in a small roastery in the hills of Coorg, where the air smells of rain and fresh-ground coffee. We started with one roaster, two hands, and an obsession with the perfect extraction.</p>
+        <p class="about__p">Every batch we roast is traceable to a single farm. We believe the story of a coffee matters as much as its taste. Our farmers are partners, not suppliers.</p>
+        <p class="about__p">Whether you're a first-time espresso drinker or a seasoned barista, Cup'O'Chino is your daily ritual. Pull up a chair. The coffee is almost ready.</p>
+
+        <div class="about__stats">
+          <div><strong>14</strong><span>partner farms</span></div>
+          <div><strong>3</strong><span>regions</span></div>
+          <div><strong>0</strong><span>shortcuts</span></div>
+        </div>
+      </div>
+
+      <div class="about__visual">
+        <img class="about__cup-image" src="assets/images/cup-white.png" alt="White Cup'O'Chino latte cup" />
+        <svg class="about__cup-legacy" viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg" id="aboutSvg" aria-hidden="true">
+          <defs>
+            <radialGradient id="aboutGlow" cx="50%" cy="40%" r="50%">
+              <stop offset="0%" stop-color="#C8860A" stop-opacity="0.15"/>
+              <stop offset="100%" stop-color="#C8860A" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+
+          <!-- Background ring -->
+          <circle cx="200" cy="260" r="180" fill="url(#aboutGlow)"/>
+          <circle cx="200" cy="260" r="170" fill="none" stroke="#C8860A" stroke-width="1" stroke-dasharray="2 6" opacity="0.4"/>
+
+          <!-- Steam paths -->
+          <path id="aboutSteam1" d="M 165 130 Q 155 100 165 70 Q 175 40 165 10" stroke="#7A6A5A" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.5"/>
+          <path id="aboutSteam2" d="M 200 130 Q 210 100 200 70 Q 190 40 200 10" stroke="#7A6A5A" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.5"/>
+          <path id="aboutSteam3" d="M 235 130 Q 225 100 235 70 Q 245 40 235 10" stroke="#7A6A5A" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.5"/>
+
+          <!-- Saucer -->
+          <ellipse class="about-cup-shadow" cx="200" cy="410" rx="160" ry="20" fill="#3B1F0A" opacity="0.3"/>
+          <ellipse class="about-cup-saucer" cx="200" cy="405" rx="150" ry="16" fill="#3B1F0A"/>
+          <ellipse class="about-cup-saucer-inner" cx="200" cy="400" rx="120" ry="10" fill="#5A3418"/>
+
+          <!-- Mug body -->
+          <path class="about-cup-body" d="M 110 180 L 120 380 Q 122 400 142 400 L 258 400 Q 278 400 280 380 L 290 180 Z" fill="#3B1F0A" stroke="#C8860A" stroke-width="2"/>
+
+          <!-- Mug top -->
+          <ellipse class="about-cup-rim" cx="200" cy="180" rx="90" ry="18" fill="#5A3418" stroke="#C8860A" stroke-width="2"/>
+          <ellipse class="about-cup-rim-inner" cx="200" cy="180" rx="80" ry="13" fill="#1A0A00"/>
+
+          <!-- Coffee surface -->
+          <ellipse class="about-cup-coffee" cx="200" cy="180" rx="76" ry="11" fill="#2A1408"/>
+          <ellipse class="about-cup-crema" cx="200" cy="175" rx="60" ry="6" fill="#5A3418" opacity="0.6"/>
+
+          <!-- Handle -->
+          <path class="about-cup-handle" d="M 285 230 Q 340 230 340 285 Q 340 340 285 340" fill="none" stroke="#C8860A" stroke-width="6"/>
+          <path class="about-cup-handle-inner" d="M 285 240 Q 330 240 330 285 Q 330 330 285 330" fill="none" stroke="#3B1F0A" stroke-width="4"/>
+
+          <!-- Brand mark -->
+          <g class="cup-brand-mark">
+            <circle cx="200" cy="287" r="19" fill="none" stroke="#C8860A" stroke-width="1" opacity="0.75"/>
+            <path class="cup-brand-leaf" d="M 190 292 Q 190 278 210 270 Q 208 288 190 292 Z" fill="#C8860A" opacity="0.9"/>
+            <path class="cup-brand-vein" d="M 194 289 Q 202 281 208 274" stroke="#F5ECD7" stroke-width="1.2" fill="none"/>
+          </g>
+          <text class="cup-brand-name" x="200" y="318" text-anchor="middle" fill="#C8860A" font-family="Playfair Display" font-size="18" font-style="italic">Cup'O'Chino</text>
+          <line class="cup-brand-rule" x1="160" y1="328" x2="240" y2="328" stroke="#C8860A" stroke-width="1" opacity="0.6"/>
+          <text class="cup-brand-est" x="200" y="344" text-anchor="middle" fill="#F5ECD7" font-family="Lato" font-size="8" letter-spacing="3" opacity="0.6">EST. 2019</text>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SECTION 4 — MENU ==================== -->
+  <section id="menu" class="menu">
+    <div class="section-leaves section-leaves--menu" aria-hidden="true"></div>
+    <div class="container">
+      <div class="menu__header">
+        <p class="eyebrow">— The Menu</p>
+        <h2 class="section__title">What We Brew</h2>
+        <p class="section__sub">Six rituals, each its own answer to the question: <em>what does coffee taste like, when it is made with care?</em></p>
+      </div>
+
+      <div class="menu__row" id="menuRow">
+
+        <!-- CARD 1 - Espresso -->
+        <article class="menu-card">
+          <div class="menu-card__inner">
+            <div class="menu-card__front">
+              <div class="menu-card__num">01</div>
+              <div class="menu-card__icon">
+                <svg viewBox="0 0 80 90" fill="none">
+                  <ellipse cx="40" cy="20" rx="22" ry="4" fill="#1A0A00"/>
+                  <path d="M 18 22 L 22 70 Q 23 78 32 78 L 48 78 Q 57 78 58 70 L 62 22 Z" fill="#F5ECD7" stroke="#1A0A00" stroke-width="1.5"/>
+                  <ellipse cx="40" cy="22" rx="22" ry="4" fill="#FAF3E8" stroke="#1A0A00" stroke-width="1.5"/>
+                  <ellipse cx="40" cy="22" rx="18" ry="3" fill="#3B1F0A"/>
+                  <path d="M 58 38 Q 70 38 70 50 Q 70 62 58 62" fill="none" stroke="#1A0A00" stroke-width="2"/>
+                </svg>
+              </div>
+              <h3>Espresso</h3>
+              <p>Pure. Honest. Unapologetic.</p>
+              <span class="menu-card__hint">hover →</span>
+            </div>
+            <div class="menu-card__back">
+              <p class="menu-card__desc">A 25-second pour. 30ml of liquid velvet. The foundation of every drink we make, served alone for those who know.</p>
+              <div class="menu-card__notes">
+                <span>Notes</span>
+                <p>Dark chocolate · cedar · tobacco</p>
+              </div>
+              <div class="menu-card__intensity">
+                <span>Intensity</span>
+                <div class="dots"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- CARD 2 - Cappuccino -->
+        <article class="menu-card">
+          <div class="menu-card__inner">
+            <div class="menu-card__front">
+              <div class="menu-card__num">02</div>
+              <div class="menu-card__icon">
+                <svg viewBox="0 0 80 90" fill="none">
+                  <path d="M 14 28 L 18 76 Q 19 84 28 84 L 52 84 Q 61 84 62 76 L 66 28 Z" fill="#F5ECD7" stroke="#1A0A00" stroke-width="1.5"/>
+                  <ellipse cx="40" cy="28" rx="26" ry="5" fill="#FAF3E8" stroke="#1A0A00" stroke-width="1.5"/>
+                  <ellipse cx="40" cy="28" rx="22" ry="4" fill="#FAF3E8"/>
+                  <path d="M 30 27 Q 35 23 40 27 Q 45 31 50 27" stroke="#C8860A" stroke-width="1.2" fill="none"/>
+                  <path d="M 32 30 Q 36 28 40 30 Q 44 32 48 30" stroke="#C8860A" stroke-width="1" fill="none" opacity="0.6"/>
+                  <path d="M 62 44 Q 74 44 74 56 Q 74 68 62 68" fill="none" stroke="#1A0A00" stroke-width="2"/>
+                </svg>
+              </div>
+              <h3>Cappuccino</h3>
+              <p>The classic in its finest form.</p>
+              <span class="menu-card__hint">hover →</span>
+            </div>
+            <div class="menu-card__back">
+              <p class="menu-card__desc">A perfect third of espresso, third of steamed milk, third of microfoam. Crowned with a hand-poured rosetta.</p>
+              <div class="menu-card__notes">
+                <span>Notes</span>
+                <p>Milk chocolate · caramel · toasted grain</p>
+              </div>
+              <div class="menu-card__intensity">
+                <span>Intensity</span>
+                <div class="dots"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- CARD 3 - Cold Brew -->
+        <article class="menu-card">
+          <div class="menu-card__inner">
+            <div class="menu-card__front">
+              <div class="menu-card__num">03</div>
+              <div class="menu-card__icon">
+                <svg viewBox="0 0 80 90" fill="none">
+                  <path d="M 22 14 L 22 80 Q 22 84 26 84 L 54 84 Q 58 84 58 80 L 58 14 Z" fill="#3B1F0A" stroke="#1A0A00" stroke-width="1.5"/>
+                  <rect x="22" y="14" width="36" height="6" fill="#C8860A"/>
+                  <rect x="28" y="8" width="24" height="6" rx="2" fill="#1A0A00"/>
+                  <line x1="38" y1="2" x2="38" y2="8" stroke="#1A0A00" stroke-width="2"/>
+                  <line x1="42" y1="2" x2="42" y2="8" stroke="#1A0A00" stroke-width="2"/>
+                  <line x1="40" y1="0" x2="40" y2="2" stroke="#1A0A00" stroke-width="2"/>
+                  <circle cx="32" cy="40" r="2" fill="#FAF3E8" opacity="0.4"/>
+                  <circle cx="48" cy="55" r="2" fill="#FAF3E8" opacity="0.4"/>
+                  <circle cx="36" cy="65" r="2" fill="#FAF3E8" opacity="0.4"/>
+                  <text x="40" y="50" text-anchor="middle" fill="#F5ECD7" font-family="Playfair Display" font-size="8" font-style="italic">18h</text>
+                </svg>
+              </div>
+              <h3>Cold Brew</h3>
+              <p>18 hours of patience, zero compromise.</p>
+              <span class="menu-card__hint">hover →</span>
+            </div>
+            <div class="menu-card__back">
+              <p class="menu-card__desc">Steeped slow at 4°C with coarse-ground beans for eighteen hours. Smooth, sweet, twice as caffeinated as our espresso.</p>
+              <div class="menu-card__notes">
+                <span>Notes</span>
+                <p>Dark cherry · cocoa · smooth finish</p>
+              </div>
+              <div class="menu-card__intensity">
+                <span>Intensity</span>
+                <div class="dots"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- CARD 4 - Flat White -->
+        <article class="menu-card">
+          <div class="menu-card__inner">
+            <div class="menu-card__front">
+              <div class="menu-card__num">04</div>
+              <div class="menu-card__icon">
+                <svg viewBox="0 0 80 90" fill="none">
+                  <path d="M 16 30 L 20 76 Q 21 84 30 84 L 50 84 Q 59 84 60 76 L 64 30 Z" fill="#F5ECD7" stroke="#1A0A00" stroke-width="1.5"/>
+                  <ellipse cx="40" cy="30" rx="24" ry="5" fill="#3B1F0A" stroke="#1A0A00" stroke-width="1.5"/>
+                  <ellipse cx="40" cy="29" rx="20" ry="3.5" fill="#5A3418"/>
+                  <path d="M 35 27 Q 40 24 45 27" stroke="#F5ECD7" stroke-width="1.5" fill="none"/>
+                  <path d="M 60 44 Q 72 44 72 56 Q 72 68 60 68" fill="none" stroke="#1A0A00" stroke-width="2"/>
+                </svg>
+              </div>
+              <h3>Flat White</h3>
+              <p>Less milk, more coffee, no nonsense.</p>
+              <span class="menu-card__hint">hover →</span>
+            </div>
+            <div class="menu-card__back">
+              <p class="menu-card__desc">Double ristretto under velvet microfoam. The Antipodean classic, made the way it was meant to be made.</p>
+              <div class="menu-card__notes">
+                <span>Notes</span>
+                <p>Walnut · brown sugar · cream</p>
+              </div>
+              <div class="menu-card__intensity">
+                <span>Intensity</span>
+                <div class="dots"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- CARD 5 - Cortado -->
+        <article class="menu-card">
+          <div class="menu-card__inner">
+            <div class="menu-card__front">
+              <div class="menu-card__num">05</div>
+              <div class="menu-card__icon">
+                <svg viewBox="0 0 80 90" fill="none">
+                  <path d="M 24 36 L 26 76 Q 27 84 34 84 L 46 84 Q 53 84 54 76 L 56 36 Z" fill="#F5ECD7" stroke="#1A0A00" stroke-width="1.5"/>
+                  <ellipse cx="40" cy="36" rx="16" ry="4" fill="#3B1F0A" stroke="#1A0A00" stroke-width="1.5"/>
+                  <ellipse cx="40" cy="35" rx="13" ry="3" fill="#5A3418"/>
+                  <path d="M 54 48 Q 64 48 64 58 Q 64 68 54 68" fill="none" stroke="#1A0A00" stroke-width="2"/>
+                  <text x="40" y="60" text-anchor="middle" fill="#1A0A00" font-family="Playfair Display" font-size="10" font-style="italic">1:1</text>
+                </svg>
+              </div>
+              <h3>Cortado</h3>
+              <p>Equal parts espresso and milk. Perfect balance.</p>
+              <span class="menu-card__hint">hover →</span>
+            </div>
+            <div class="menu-card__back">
+              <p class="menu-card__desc">A Spanish tradition. 30ml of espresso met by 30ml of warm, lightly textured milk. No foam, no fuss, all flavour.</p>
+              <div class="menu-card__notes">
+                <span>Notes</span>
+                <p>Hazelnut · vanilla · citrus</p>
+              </div>
+              <div class="menu-card__intensity">
+                <span>Intensity</span>
+                <div class="dots"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- CARD 6 - Filter Coffee -->
+        <article class="menu-card">
+          <div class="menu-card__inner">
+            <div class="menu-card__front">
+              <div class="menu-card__num">06</div>
+              <div class="menu-card__icon">
+                <svg viewBox="0 0 80 90" fill="none">
+                  <path d="M 20 38 L 24 76 Q 25 84 32 84 L 48 84 Q 55 84 56 76 L 60 38 Z" fill="#C8860A" stroke="#1A0A00" stroke-width="1.5"/>
+                  <ellipse cx="40" cy="38" rx="20" ry="4" fill="#1A0A00" stroke="#1A0A00" stroke-width="1.5"/>
+                  <!-- Tumbler decoration -->
+                  <line x1="22" y1="50" x2="58" y2="50" stroke="#1A0A00" stroke-width="0.8"/>
+                  <line x1="23" y1="60" x2="57" y2="60" stroke="#1A0A00" stroke-width="0.8"/>
+                  <line x1="24" y1="70" x2="56" y2="70" stroke="#1A0A00" stroke-width="0.8"/>
+                  <!-- Davara underneath -->
+                  <ellipse cx="40" cy="86" rx="30" ry="4" fill="#1A0A00" opacity="0.3"/>
+                </svg>
+              </div>
+              <h3>Filter Coffee</h3>
+              <p>South Indian tradition, every morning.</p>
+              <span class="menu-card__hint">hover →</span>
+            </div>
+            <div class="menu-card__back">
+              <p class="menu-card__desc">Decoction from a traditional brass filter. Mixed with steaming milk and a pinch of jaggery. The morning of a million homes.</p>
+              <div class="menu-card__notes">
+                <span>Notes</span>
+                <p>Jaggery · chicory · roasted grain</p>
+              </div>
+              <div class="menu-card__intensity">
+                <span>Intensity</span>
+                <div class="dots"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <p class="menu__hint" id="menuHint">← drag or scroll →</p>
+    </div>
+  </section>
+
+  <!-- ==================== SECTION 5 — PROCESS ==================== -->
+  <section id="process" class="process">
+    <div class="container">
+      <div class="process__header">
+        <p class="eyebrow eyebrow--dark">— The Process</p>
+        <h2 class="section__title section__title--dark">The Craft <em>Behind Every Cup.</em></h2>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline__line"></div>
+
+        <article class="t-step t-step--left" data-step="1">
+          <div class="t-step__num">01</div>
+          <div class="t-step__dot"></div>
+          <div class="t-step__card">
+            <div class="t-step__icon">
+              <!-- Leaf -->
+              <svg viewBox="0 0 32 32" fill="none">
+                <path d="M 4 28 Q 4 10 28 4 Q 26 22 4 28 Z" fill="currentColor"/>
+                <path d="M 8 24 Q 16 14 24 8" stroke="#1A0A00" stroke-width="1.2"/>
+              </svg>
+            </div>
+            <h3>Sourcing</h3>
+            <p>We source exclusively from single-origin farms across Coorg, Chikmagalur, and Araku Valley. Every lot is cupped and approved by our head roaster before it enters our facility.</p>
+          </div>
+        </article>
+
+        <article class="t-step t-step--right" data-step="2">
+          <div class="t-step__num">02</div>
+          <div class="t-step__dot"></div>
+          <div class="t-step__card">
+            <div class="t-step__icon">
+              <!-- Flame -->
+              <svg viewBox="0 0 32 32" fill="none">
+                <path d="M 16 2 Q 22 10 22 16 Q 26 18 26 22 Q 26 28 16 28 Q 6 28 6 22 Q 6 18 10 16 Q 10 10 16 2 Z" fill="currentColor"/>
+                <path d="M 16 12 Q 19 16 19 19 Q 19 22 16 22 Q 13 22 13 19 Q 13 16 16 12 Z" fill="#1A0A00"/>
+              </svg>
+            </div>
+            <h3>Roasting</h3>
+            <p>Our drum roaster runs at precise temperature curves developed over 3 years of testing. Each origin gets its own roast profile — never a one-size-fits-all approach.</p>
+          </div>
+        </article>
+
+        <article class="t-step t-step--left" data-step="3">
+          <div class="t-step__num">03</div>
+          <div class="t-step__dot"></div>
+          <div class="t-step__card">
+            <div class="t-step__icon">
+              <!-- Gear -->
+              <svg viewBox="0 0 32 32" fill="none">
+                <path d="M 16 3 L 18 7 L 22 5 L 23 9 L 27 9 L 25 13 L 29 16 L 25 19 L 27 23 L 23 23 L 22 27 L 18 25 L 16 29 L 14 25 L 10 27 L 9 23 L 5 23 L 7 19 L 3 16 L 7 13 L 5 9 L 9 9 L 10 5 L 14 7 Z" fill="currentColor"/>
+                <circle cx="16" cy="16" r="5" fill="#1A0A00"/>
+              </svg>
+            </div>
+            <h3>Grinding</h3>
+            <p>Fresh grinding happens within 30 minutes of brewing. We use calibrated burr grinders set to the exact micron for each brew method.</p>
+          </div>
+        </article>
+
+        <article class="t-step t-step--right" data-step="4">
+          <div class="t-step__num">04</div>
+          <div class="t-step__dot"></div>
+          <div class="t-step__card">
+            <div class="t-step__icon">
+              <!-- Drop -->
+              <svg viewBox="0 0 32 32" fill="none">
+                <path d="M 16 3 Q 6 14 6 21 Q 6 28 16 28 Q 26 28 26 21 Q 26 14 16 3 Z" fill="currentColor"/>
+                <path d="M 12 18 Q 12 23 16 23" stroke="#1A0A00" stroke-width="1.5" fill="none"/>
+              </svg>
+            </div>
+            <h3>Brewing</h3>
+            <p>Every extraction is measured. Dose, yield, temperature, and time — all dialled in to within 0.1 grams. This is not guesswork. It is craft.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SECTION 6 — INFO CARDS ==================== -->
+  <section id="info" class="info">
+    <div class="container">
+      <div class="info__row">
+
+        <article class="info-card">
+          <div class="info-card__icon">
+            <svg viewBox="0 0 48 48" fill="none">
+              <circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="2"/>
+              <path d="M 24 12 L 24 24 L 32 28" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <p class="info-card__label">01 / Hours</p>
+          <h3>Opening Hours</h3>
+          <ul>
+            <li><span>Mon — Fri</span><span>7:00 AM — 9:00 PM</span></li>
+            <li><span>Saturday</span><span>8:00 AM — 10:00 PM</span></li>
+            <li><span>Sunday</span><span>9:00 AM — 8:00 PM</span></li>
+          </ul>
+        </article>
+
+        <article class="info-card info-card--feature">
+          <div class="info-card__icon">
+            <svg viewBox="0 0 48 48" fill="none">
+              <path d="M 10 8 L 18 8 L 22 16 L 18 20 Q 22 28 28 32 L 32 28 L 40 32 L 40 40 Q 40 42 38 42 Q 18 42 6 24 Q 6 10 8 10 Q 10 8 10 8 Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <p class="info-card__label">02 / Contact</p>
+          <h3>Get in Touch</h3>
+          <ul>
+            <li><span>Email</span><span>hello@cupochino.com</span></li>
+            <li><span>Phone</span><span>+91 98765 43210</span></li>
+            <li><span>Reply</span><span>within 24 hours</span></li>
+          </ul>
+        </article>
+
+        <article class="info-card">
+          <div class="info-card__icon">
+            <svg viewBox="0 0 48 48" fill="none">
+              <path d="M 6 16 L 24 6 L 42 16 L 42 36 L 24 46 L 6 36 Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M 6 16 L 24 26 L 42 16" stroke="currentColor" stroke-width="2"/>
+              <path d="M 24 26 L 24 46" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </div>
+          <p class="info-card__label">03 / Delivery</p>
+          <h3>We Deliver</h3>
+          <ul>
+            <li><span>Free over</span><span>₹499</span></li>
+            <li><span>Same day</span><span>within 10km</span></li>
+            <li><span>Pan-India</span><span>3 — 5 days</span></li>
+          </ul>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SECTION 7 — LOCATION ==================== -->
+  <section id="location" class="location">
+    <div class="container">
+      <div class="location__header">
+        <p class="eyebrow eyebrow--dark">— The Place</p>
+        <h2 class="section__title section__title--dark">Find Us.</h2>
+      </div>
+
+      <div class="location__grid">
+        <div class="location__map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.0673898253726!2d77.63823367507795!3d12.97839351465067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae16b8b6a0c2c5%3A0x0!2sIndiranagar%2C%20Bengaluru%2C%20Karnataka%20560038!5e0!3m2!1sen!2sin!4v1700000000000"
+            width="100%" height="450" style="border:0;" allowfullscreen=""
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            title="Cup'O'Chino — Indiranagar"></iframe>
+        </div>
+
+        <aside class="location__details">
+          <p class="eyebrow eyebrow--dark">— Address</p>
+          <p class="location__address">
+            Cup'O'Chino<br>
+            42, 100 Feet Road<br>
+            Indiranagar, Bengaluru<br>
+            Karnataka 560038
+          </p>
+          <a class="btn btn--gold" href="https://maps.google.com/?q=Indiranagar+Bengaluru" target="_blank" rel="noopener">
+            Get Directions
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+              <path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <div class="location__detail-row">
+            <span>nearest metro</span><strong>Indiranagar (Purple)</strong>
+          </div>
+          <div class="location__detail-row">
+            <span>parking</span><strong>basement, free for guests</strong>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SECTION 8 — TESTIMONIALS ==================== -->
+  <section id="testimonials" class="testimonials">
+    <div class="container">
+      <p class="eyebrow">— Word of Mouth</p>
+      <h2 class="section__title">What Our Guests Say</h2>
+
+      <div class="testimonials__stage" id="testimonialStage">
+        <div class="testimonial active" data-index="0">
+          <svg class="testimonial__quote" viewBox="0 0 60 60" fill="none">
+            <path d="M 10 36 Q 10 18 28 12 L 28 20 Q 18 24 18 32 L 28 32 L 28 48 L 10 48 Z M 32 36 Q 32 18 50 12 L 50 20 Q 40 24 40 32 L 50 32 L 50 48 L 32 48 Z" fill="currentColor"/>
+          </svg>
+          <p class="testimonial__text">The cold brew here is the only reason I survive Monday mornings. Genuinely life-changing.</p>
+          <p class="testimonial__attr"><strong>Aarav M.</strong><span>Bengaluru</span></p>
+        </div>
+        <div class="testimonial" data-index="1">
+          <svg class="testimonial__quote" viewBox="0 0 60 60" fill="none">
+            <path d="M 10 36 Q 10 18 28 12 L 28 20 Q 18 24 18 32 L 28 32 L 28 48 L 10 48 Z M 32 36 Q 32 18 50 12 L 50 20 Q 40 24 40 32 L 50 32 L 50 48 L 32 48 Z" fill="currentColor"/>
+          </svg>
+          <p class="testimonial__text">I've been to coffee shops across 12 countries. Cup'O'Chino is the only place I keep coming back to.</p>
+          <p class="testimonial__attr"><strong>Priya S.</strong><span>Mumbai</span></p>
+        </div>
+        <div class="testimonial" data-index="2">
+          <svg class="testimonial__quote" viewBox="0 0 60 60" fill="none">
+            <path d="M 10 36 Q 10 18 28 12 L 28 20 Q 18 24 18 32 L 28 32 L 28 48 L 10 48 Z M 32 36 Q 32 18 50 12 L 50 20 Q 40 24 40 32 L 50 32 L 50 48 L 32 48 Z" fill="currentColor"/>
+          </svg>
+          <p class="testimonial__text">The filter coffee tastes exactly like my grandmother used to make, except it's somehow even better.</p>
+          <p class="testimonial__attr"><strong>Kiran R.</strong><span>Chennai</span></p>
+        </div>
+      </div>
+
+      <div class="testimonials__dots" id="testimonialDots">
+        <button class="t-dot active" data-target="0" aria-label="testimonial 1"></button>
+        <button class="t-dot" data-target="1" aria-label="testimonial 2"></button>
+        <button class="t-dot" data-target="2" aria-label="testimonial 3"></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SECTION 9 — NEWSLETTER ==================== -->
+  <section id="newsletter" class="newsletter">
+    <div class="container newsletter__wrap">
+      <p class="eyebrow">— The Loop</p>
+      <h2 class="section__title">Stay in the Loop</h2>
+      <p class="newsletter__sub">Get brewing tips, seasonal menus, and early access to new blends. One email a month, never more.</p>
+
+      <form id="newsletterForm" class="newsletter__form" novalidate>
+        <input type="email" id="newsletterEmail" placeholder="your email address" required aria-label="Email address" />
+        <button type="submit" class="btn btn--gold">
+          Subscribe
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+            <path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </form>
+      <p id="newsletterError" class="newsletter__error" aria-live="polite"></p>
+      <div id="newsletterSuccess" class="newsletter__success" hidden>
+        <p class="newsletter__success-text">Thank you. Your first brew tip is on its way.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SECTION 10 — FOOTER ==================== -->
+  <footer class="footer">
+    <div class="section-leaves section-leaves--footer" aria-hidden="true"></div>
+    <div class="container">
+      <div class="footer__grid">
+
+        <div class="footer__col footer__brand">
+          <p class="footer__logo">Cup'O'Chino</p>
+          <p class="footer__tag">From Bean to Cup, Every Drop Tells a Story.</p>
+          <div class="footer__socials">
+            <a href="#" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" width="22" height="22">
+                <rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.7"/>
+                <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.7"/>
+                <circle cx="17.5" cy="6.5" r="1" fill="currentColor"/>
+              </svg>
+            </a>
+            <a href="#" aria-label="Twitter">
+              <svg viewBox="0 0 24 24" fill="none" width="22" height="22">
+                <path d="M22 5.8a8 8 0 0 1-2.4.7 4.1 4.1 0 0 0 1.8-2.3 8.4 8.4 0 0 1-2.6 1 4.1 4.1 0 0 0-7 3.8A11.6 11.6 0 0 1 3 4.7a4.1 4.1 0 0 0 1.3 5.5 4 4 0 0 1-1.9-.5v.1a4.1 4.1 0 0 0 3.3 4 4.1 4.1 0 0 1-1.8.1A4.1 4.1 0 0 0 7.7 17a8.3 8.3 0 0 1-6 1.7A11.7 11.7 0 0 0 8 20.6c7.6 0 11.7-6.3 11.7-11.7v-.5A8.4 8.4 0 0 0 22 5.8Z" fill="currentColor"/>
+              </svg>
+            </a>
+            <a href="#" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="none" width="22" height="22">
+                <path d="M13 22v-9h3l.5-4H13V6.5C13 5.5 13.3 5 14.7 5H17V1.3A30 30 0 0 0 14 1c-3 0-5 1.8-5 5.1V9H6v4h3v9h4Z" fill="currentColor"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <p class="footer__heading">Explore</p>
+          <ul>
+            <li><a href="#about">Our Story</a></li>
+            <li><a href="#menu">The Menu</a></li>
+            <li><a href="#process">The Process</a></li>
+            <li><a href="#location">Find Us</a></li>
+            <li><a href="#info">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <p class="footer__heading">Visit</p>
+          <p class="footer__address">
+            42, 100 Feet Road<br>
+            Indiranagar, Bengaluru<br>
+            560038
+          </p>
+          <p class="footer__small">hello@cupochino.com</p>
+        </div>
+
+        <div class="footer__col">
+          <p class="footer__heading">Legal</p>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Cookies</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer__bottom">
+        <p>© 2026 Cup'O'Chino. All rights reserved.</p>
+        <p>Roasted in Bengaluru · Brewed everywhere.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- GSAP -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollToPlugin.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/MotionPathPlugin.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/DrawSVGPlugin.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
